@@ -1,0 +1,3 @@
+Wallet
+======
+Wallet web application
