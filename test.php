@@ -1,17 +1,19 @@
-$peixunxiangmu = rtrim($peixunxiangmu, ','); 
-
-$peixunxiangmuarr = explode(',',$peixunxiangmu);
+$peixunxiangmu=rtrim($peixunxiangmu,',');
+$peixunxiangmuarr=explode(',',$peixunxiangmu);
 $jianianq='';
-if( $peixunxiangmu !="0" and $peixunxiangmu !=""){
-foreach($peixunxiangmuarr as $k=>$v){
-	if(!empty($v)){
-		if($jianianq==''){
-			$jianianq .=" `pxxm`='$v' ";
-		}else{
-		$jianianq .=" or 'pxxm`='$v' ";  
+if($peixunxiangmu!="0" and $peixunxiangmu!=""){
+	foreach($peixunxiangmuarr as $k=>$v){
+		if(!empty($v)){
+			if($jianianq==''){
+				$jianianq .="'pxxm'='$v'";
+			}else{
+				$jianianq .="or 'pxxm'='$v'";
+				
+			}
 		}
+		
 	}
+	 
+	$wq.="and (".$jianianq.") ";
 	
-}
-	$wq .=" and (".$jianianq.") ";    
 }
