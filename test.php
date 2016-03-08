@@ -13,7 +13,7 @@ if($peixunxiangmu!="0" and $peixunxiangmu!=""){
 		}
 		
 	}
-	 
+	 //test
 	$wq.="and (".$jianianq.") ";
 	
 }
