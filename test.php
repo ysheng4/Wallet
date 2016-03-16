@@ -14,6 +14,6 @@ if($peixunxiangmu!="0" and $peixunxiangmu!=""){
 		
 	}
 	 //test
-	$wq.="and (".$jianianq.") ";1111
+	$wq.="and (".$jianianq.") ";111111
 	
 }
